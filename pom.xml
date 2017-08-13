@@ -13,15 +13,27 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <encoding>UTF-8</encoding>
-    <scala.version>2.11.8</scala.version>
-    <scala.compat.version>2.11</scala.compat.version>
+    <scala.version>2.12.3</scala.version>
+    <scala.compat.version>2.12</scala.compat.version>
   </properties>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.5.1.RELEASE</version>
+    <version>1.5.6.RELEASE</version>
   </parent>
+
+  <repositories> 
+    <repository> 
+      <id>central</id> 
+      <name>Central Repository</name> 
+      <url>http://maven.aliyun.com/nexus/content/groups/public</url> 
+      <layout>default</layout> 
+      <snapshots> 
+        <enabled>false</enabled> 
+      </snapshots> 
+    </repository> 
+  </repositories>
 
   <dependencies>
     <dependency>
@@ -78,7 +90,7 @@
     <dependency>
       <groupId>org.scalatest</groupId>
       <artifactId>scalatest_${scala.compat.version}</artifactId>
-      <version>2.2.4</version>
+      <version>3.0.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
