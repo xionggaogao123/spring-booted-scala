@@ -1,27 +1,24 @@
 package com.sadhen.spring.boot.controller
 
 import com.fasterxml.jackson.databind.JsonNode
+import com.sadhen.spring.boot.service.WorldService
 import org.json4s.JsonAST.{JInt, JString, JValue}
 import org.json4s.JsonDSL._
 import org.json4s.jackson.JsonMethods._
-import org.springframework.web.bind.annotation.{
-  RequestBody,
-  RequestMapping,
-  RequestMethod,
-  RestController
-}
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.web.bind.annotation.{RequestBody, RequestMapping, RequestMethod, RestController}
 
 /**
   * Created by rendong on 17/3/24.
   */
 @RestController
 @RequestMapping(value = Array("/api"))
-class HelloController {
+class HelloController @Autowired() (worldService: WorldService) {
   implicit def autoAsJsonNode(value: JValue): JsonNode = asJsonNode(value)
 
   @RequestMapping(value = Array("/hello"))
   def hello: JsonNode = {
-    val world: String = "世界"
+    val world: String = worldService.getCountry
 
     ("code" -> 0) ~
       ("data" -> ("hello" -> world) ~ ("year" -> 2017)) ~
