@@ -1,5 +1,3 @@
-import sbt._
-
 name := "spring-boot-with-scala"
 organization := "com.sadhen.spring.boot"
 version := "1.0"
@@ -26,3 +24,5 @@ libraryDependencies ++= Seq(
 )
 
 mainClass := Some("com.sadhen.spring.boot.Application")
+
+enablePlugins(JavaAppPackaging)
