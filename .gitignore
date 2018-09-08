@@ -28,3 +28,6 @@ target/
 *.iml
 
 logs/
+*.log
+.ensime
+.ensime_cache/
