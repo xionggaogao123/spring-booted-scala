@@ -1,6 +1,6 @@
 package com.sadhen.spring.boot.scheduler
 
-import java.time.LocalDate
+import java.time.LocalDateTime
 
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
@@ -15,7 +15,7 @@ class HeartBeat {
 
   @Scheduled(fixedDelay = 10000, initialDelay = 1000)
   def beat(): Unit = {
-    log.info(s"heart beat at ${LocalDate.now.toString}")
+    log.info(s"heart beat at ${LocalDateTime.now.toString}")
     log.debug("I'm debugging")
   }
 }

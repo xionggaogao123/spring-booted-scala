@@ -2,6 +2,7 @@ package com.sadhen.spring.boot
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.scheduling.annotation.EnableScheduling
 
 /**
   * Created by rendong on 17/2/6.
@@ -12,4 +13,5 @@ object Application extends App {
 }
 
 @SpringBootApplication
+@EnableScheduling
 class Application
