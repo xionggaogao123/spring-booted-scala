@@ -5,10 +5,10 @@ version := "1.0"
 resolvers += "Local Maven Repository" at "file://" + Path.userHome.absolutePath + "/.m2/repository"
 resolvers += "aliyun" at "http://maven.aliyun.com/nexus/content/groups/public"
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.6"
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
-lazy val springBootVersion = "1.5.6.RELEASE"
+lazy val springBootVersion = "2.0.4.RELEASE"
 
 libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot" % springBootVersion,
@@ -16,11 +16,13 @@ libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot-starter-actuator" % springBootVersion,
   "org.springframework.boot" % "spring-boot-autoconfigure" % springBootVersion,
   "org.springframework.boot" % "spring-boot-starter-logging" % springBootVersion,
-  "org.log4s" %% "log4s" % "1.3.4",
-  "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.8.7",
-  "org.json4s" %% "json4s-jackson" % "3.5.1",
-  "org.scalatest" %% "scalatest" % "3.0.1" % Test,
-  "org.scalamock" %% "scalamock-scalatest-support" % "3.5.0" % Test
+  "org.log4s" %% "log4s" % "1.6.1",
+  "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.9.6",
+  "org.json4s" %% "json4s-jackson" % "3.6.1",
+  "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+  "org.scalamock" %% "scalamock" % "4.1.0" % Test,
+  "org.springframework.boot" % "spring-boot-starter-test" % springBootVersion % Test,
+  "junit" % "junit" % "4.12" % Test,
 )
 
 mainClass := Some("com.sadhen.spring.boot.Application")
