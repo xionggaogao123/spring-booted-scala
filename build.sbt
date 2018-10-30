@@ -3,12 +3,12 @@ organization := "com.sadhen.spring.boot"
 version := "1.0"
 
 resolvers += "Local Maven Repository" at "file://" + Path.userHome.absolutePath + "/.m2/repository"
-resolvers += "aliyun" at "http://maven.aliyun.com/nexus/content/groups/public"
+// resolvers += "aliyun" at "http://maven.aliyun.com/nexus/content/groups/public"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.7"
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
-lazy val springBootVersion = "2.0.4.RELEASE"
+lazy val springBootVersion = "2.0.6.RELEASE"
 
 libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot" % springBootVersion,
