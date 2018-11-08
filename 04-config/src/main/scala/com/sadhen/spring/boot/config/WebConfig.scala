@@ -1,4 +1,4 @@
-package com.sadhen.spring.boot.configure
+package com.sadhen.spring.boot.config
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility
 import com.fasterxml.jackson.annotation.PropertyAccessor

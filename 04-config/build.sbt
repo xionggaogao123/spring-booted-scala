@@ -16,6 +16,7 @@ libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot-starter-actuator" % springBootVersion,
   "org.springframework.boot" % "spring-boot-autoconfigure" % springBootVersion,
   "org.springframework.boot" % "spring-boot-starter-logging" % springBootVersion,
+  "com.wacai" %% "config-annotation" % "0.3.7",
   "org.log4s" %% "log4s" % "1.6.1",
   "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.9.6",
   "org.json4s" %% "json4s-jackson" % "3.6.1",
@@ -26,5 +27,8 @@ libraryDependencies ++= Seq(
 )
 
 mainClass := Some("com.sadhen.spring.boot.Application")
+
+addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full)
+
 
 enablePlugins(JavaAppPackaging)
