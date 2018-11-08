@@ -13,5 +13,4 @@ object Application extends App {
 }
 
 @SpringBootApplication
-@EnableScheduling
 class Application
