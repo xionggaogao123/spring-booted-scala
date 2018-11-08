@@ -1,9 +1,10 @@
-# Spring Boot with Scala
+# Configuring Spring Boot
 
-| Action | Maven | SBT |
-|--------|-------|-----|
-| run    | `mvn scala:run` | `sbt run` |
-| package | `mvn package` | `sbt universal:packageBin` |
+## Q: What is `@Configuration`
+## Q: How Spring Boot load configurations?
+## Q: How to customize the configuration file format?
+## Q: Pros and cons of Typesafe Config/YAML/applications.properties from syntax to semantics
+## Q: How to schedule several tasks?
+## Q: How `@EnableScheduling` works?
 
 ## References
-1. [Spring Boot with Scala(my post in Chinese)](http://sadhen.com/blog/2017/05/30/spring-boot-with-scala.html#Bootstrap)
