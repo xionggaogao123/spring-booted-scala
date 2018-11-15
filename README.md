@@ -6,3 +6,5 @@ Sample Projects for [闲话Scala(aka Gossip about Scala)](https://zhuanlan.zhihu
 + :construction: [Test!Test!Test!](https://github.com/sadhen/spring-booted-scala/blob/master/02-unit-tests/README.md)
 + :construction: [Deployment](https://github.com/sadhen/spring-booted-scala/blob/master/03-deploy/README.md)
 + :tada: [Configuration And Scheduler](https://github.com/sadhen/spring-booted-scala/blob/master/04-config/README.md)
++ :construction: [Validation](https://github.com/sadhen/spring-booted-scala/blob/master/05-validation/README.md)
++ :construction: [Error Handling and Web API Standard](https://github.com/sadhen/spring-booted-scala/blob/master/06-standard/README.md)

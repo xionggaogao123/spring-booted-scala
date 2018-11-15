@@ -14,6 +14,7 @@
     <module>03-deploy</module>
     <module>04-config</module>
     <module>05-validation</module>
+    <module>06-standard</module>
   </modules>
 
 </project>
